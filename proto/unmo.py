@@ -1,10 +1,10 @@
-from proto.responder import Responder
+from proto.responder import RandomResponder
 
 
 class Unmo:
     def __init__(self, name):
         self.name = name
-        self.responder = Responder(name)
+        self.responder = RandomResponder('Random')
 
     def dialogue(self, data):
         return self.responder.response(data)
