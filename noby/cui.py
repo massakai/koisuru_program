@@ -1,13 +1,13 @@
-from proto.unmo import Unmo
+from noby.unmo import Unmo
 
 
 def prompt(unmo):
     return unmo.name + ':' + unmo.responder_name() + '> '
 
 
-if __name__ == '__main__':
-    print('Unmo System prototype : proto')
-    proto = Unmo('proto')
+def main():
+    print('Unmo System prototype : noby')
+    proto = Unmo('noby')
 
     while True:
         value = input('> ').rstrip()
@@ -16,3 +16,7 @@ if __name__ == '__main__':
 
         response = proto.dialogue(value)
         print(prompt(proto) + response)
+
+
+if __name__ == '__main__':
+    main()
