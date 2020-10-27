@@ -1,4 +1,4 @@
-from proto.responder import RandomResponder
+from noby.responder import RandomResponder
 
 
 class Unmo:
