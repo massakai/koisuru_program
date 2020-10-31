@@ -30,3 +30,11 @@
 
 .. image:: images/chapter4-3.png
     :width: 300px
+
+4-4 Responderをランダムに切り換える
+-----------------------------------
+
+`noby <https://github.com/massakai/koisuru_program/tree/7f8e424ca361818686b7a8876d47d77527575234>`_
+
+.. image:: images/chapter4-4.png
+    :width: 300px
