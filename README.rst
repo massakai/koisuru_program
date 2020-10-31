@@ -22,3 +22,11 @@
 
 .. image:: images/chapter3-4.png
     :width: 300px
+
+4-3 ノビィ
+----------
+
+`noby <https://github.com/massakai/koisuru_program/tree/143f06cc7349b8593009300ea596cbb856091052>`_
+
+.. image:: images/chapter4-3.png
+    :width: 300px
