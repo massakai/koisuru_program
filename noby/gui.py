@@ -101,9 +101,9 @@ class NobyForm(tkinter.Tk):
 
     def prompt(self) -> str:
         if self.responder_option_checked.get():
-            return f'{self.noby.name}:{self.noby.responder_name()}>'
+            return f'{self.noby.name}:{self.noby.responder_name()}> '
         else:
-            return f'{self.noby.name}>'
+            return f'{self.noby.name}> '
 
 
 class LogArea(tkinter.ttk.Frame):
