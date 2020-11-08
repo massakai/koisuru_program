@@ -41,3 +41,14 @@
 
 .. image:: images/chapter4-4.png
     :width: 300px
+
+第5章 辞書を片手に
+==================
+
+5-1 辞書はファイルに
+--------------------
+
+`25b97a0  <https://github.com/massakai/koisuru_program/tree/25b97a0edab6617053fe6c5572ecd507ace4e5df>`_
+
+.. image:: images/chapter5-1.png
+    :width: 300px
