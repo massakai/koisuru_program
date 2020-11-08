@@ -21,7 +21,7 @@ class RandomResponder(Responder):
     def __init__(self, name):
         super().__init__(name)
         with open(Path(noby.__path__[0]) / 'dics' / 'random.txt') as f:
-            self.responses = [line.rstrip() for line in f]
+            self.responses = [line.rstrip() for line in f if len(line) > 0]
 
     def response(self, data):
         return random.choice(self.responses)
