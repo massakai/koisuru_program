@@ -1,4 +1,7 @@
 import random
+from pathlib import Path
+
+import noby
 
 
 class Responder:
@@ -17,7 +20,8 @@ class WhatResponder(Responder):
 class RandomResponder(Responder):
     def __init__(self, name):
         super().__init__(name)
-        self.responses = ['今日はさむいね', 'チョコたべたい', 'きのう10円ひろった']
+        with open(Path(noby.__path__[0]) / 'dics' / 'random.txt') as f:
+            self.responses = [line.rstrip() for line in f]
 
     def response(self, data):
         return random.choice(self.responses)
