@@ -52,3 +52,11 @@
 
 .. image:: images/chapter5-1.png
     :width: 300px
+
+5-4 PatternResponderの作成
+--------------------------
+
+`8c6f639  <https://github.com/massakai/koisuru_program/tree/8c6f639e92a5804faefe201448ab6df6f013f578>`_
+
+.. image:: images/chapter5-4.png
+    :width: 300px
