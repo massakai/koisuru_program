@@ -1,12 +1,10 @@
 import random
-from pathlib import Path
-
-import noby
 
 
 class Responder:
-    def __init__(self, name):
+    def __init__(self, name, dictionary):
         self.name = name
+        self.dictionary = dictionary
 
     def response(self, data):
         return ''
@@ -18,10 +16,5 @@ class WhatResponder(Responder):
 
 
 class RandomResponder(Responder):
-    def __init__(self, name):
-        super().__init__(name)
-        with open(Path(noby.__path__[0]) / 'dics' / 'random.txt') as f:
-            self.responses = [line.rstrip() for line in f if len(line) > 0]
-
     def response(self, data):
-        return random.choice(self.responses)
+        return random.choice(self.dictionary.random)
