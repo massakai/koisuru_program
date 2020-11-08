@@ -1,4 +1,5 @@
 import random
+import re
 
 
 class Responder:
@@ -17,4 +18,15 @@ class WhatResponder(Responder):
 
 class RandomResponder(Responder):
     def response(self, data):
+        return random.choice(self.dictionary.random)
+
+
+class PatternResponder(Responder):
+    def response(self, data):
+        for pattern_item in self.dictionary.pattern:
+            match = re.search(pattern_item['pattern'], data)
+            if match is None:
+                continue
+
+            return random.choice(pattern_item['phrases']).replace('%match%', match.group())
         return random.choice(self.dictionary.random)
